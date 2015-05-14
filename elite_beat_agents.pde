@@ -1,10 +1,38 @@
+//prog by Rob 'Gorrila Ribs' Miller
+//its dunk
+
+//load a bunch o' libraries
+import ddf.minim.effects.*;
+import ddf.minim.analysis.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.*;
+import ddf.minim.ugens.*;
+
+//create class
 Beat_Elite_Agents b;
+//create Minim object
+Minim sund;
+AudioPlayer sang;
+AudioMetaData meta;
+FFT frek;
+
+//load title screen
 PImage img;
+
 boolean run = false;
 void setup() {
   b = new Beat_Elite_Agents();
   size(400, 600);
   img = loadImage("beat.png");
+  //ready object
+  sund = new Minim(this);
+  //loads song from data folder, sets buffer length
+  sang = sund.loadFile("edgy.mp3", 512);
+  //load mp3 metadata
+  meta = sang.getMetaData();
+  //load frequency
+  frek = new FFT(sang.bufferSize(), sang.sampleRate());
 }
 
 void draw() {
