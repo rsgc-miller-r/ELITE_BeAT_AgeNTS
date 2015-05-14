@@ -14,13 +14,16 @@ class Beat_Elite_Agents {
     for(int f = 0; f < frek.specSize(); f++) { //start for loop
      line(f, height, f, height - frek.getBand(f)*4);
   }
-    for(int f = 0; f < sang.left.size() - 1; f++) {
+    for(int q = 0; q < sang.left.size() - 1; q++) { //'nother loop
     //make line depending on frequency of left channel of song
-    line(f,50+sang.left.get(f)*50,f+1, 50+ sang.left.get(f+1)*50);
+    line(q,50+sang.left.get(q)*50,q+1, 50+ sang.left.get(q+1)*50);
     //right channel
-    line(f,50+sang.right.get(f)*50,f+1, 50+ sang.right.get(f+1)*50);
+    line(q,50+sang.right.get(q)*50,q+1, 50+ sang.right.get(q+1)*50);
   }
-
+    println(frek.getBand(10)*4);
+    if(frek.getBand(10)*4 < 10) {
+      ellipse(200,300,50,50);
+    }
   }
   
   
