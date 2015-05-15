@@ -8,6 +8,7 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.*;
 import ddf.minim.ugens.*;
+int timer = 0;
 
 //create class
 Beat_Elite_Agents b;
@@ -16,7 +17,10 @@ Minim sund;
 AudioPlayer sang;
 AudioMetaData meta;
 FFT frek;
-
+float ex = 0; //horizontal position of arrow
+float why = 0; //vertical position of arrow
+float whyspeed = 50;
+float skor = 0;
 //load title screen
 PImage img;
 

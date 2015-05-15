@@ -5,6 +5,10 @@ class Beat_Elite_Agents {
   
   void run() {
     
+    if(timer > 0) {
+     timer-=1; 
+    }
+    
     println("R U BEAT ENUF?"); 
     background(0);
     stroke(random(255), random(255), random(255));
@@ -21,8 +25,10 @@ class Beat_Elite_Agents {
     line(q,50+sang.right.get(q)*50,q+1, 50+ sang.right.get(q+1)*50);
   }
     println(frek.getBand(10)*4);
-    if(frek.getBand(10)*4 < 10) {
+    if(frek.getBand(10)*4 > 10 && frek.getBand(10)*4 < 20 && timer == 0) {
+      fill(random(255), random(255), random(255));
       ellipse(200,300,50,50);
+      timer = 30;
     }
   }
   
