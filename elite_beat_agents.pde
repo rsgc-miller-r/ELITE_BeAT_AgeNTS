@@ -31,6 +31,7 @@ PImage rgt;
 
 boolean run = false;
 void setup() {
+
   b = new Beat_Elite_Agents();
   size(400, 600);
   dwn = loadImage("dwn.png");
