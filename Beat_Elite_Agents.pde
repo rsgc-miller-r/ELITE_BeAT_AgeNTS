@@ -11,7 +11,7 @@ class Beat_Elite_Agents {
     }
     
     println("R U BEAT ENUF?"); 
-    background(0);
+    background(255);
     stroke(random(255), random(255), random(255));
     frek.forward(sang.mix);
     sang.play();
@@ -26,32 +26,33 @@ class Beat_Elite_Agents {
     line(q,50+sang.right.get(q)*50,q+1, 50+ sang.right.get(q+1)*50);
   }
     println(frek.getBand(10)*4);
-    if(frek.getBand(10)*4 > 10 && frek.getBand(10)*4 < 20 && timer == 0) {
-      fill(0,0,255);
-      ellipse(200,300,50,50);
-      timer = 30;
+    if(frek.getBand(10)*4 > 0 && frek.getBand(10)*4 < 5 && timer == 0) {
+      image(up, height/2, width/2);
+      timer = 15;
     }
-        if(frek.getBand(10)*4 > 50 && frek.getBand(10)*4 < 60 && timer == 0) {
-      fill(0,255,0);
-      ellipse(200,300,50,50);
-      timer = 30;
+        if(frek.getBand(10)*4 > 10 && frek.getBand(10)*4 < 15 && timer == 0) {
+      image(lft, height/2, width/2);
+      timer = 15;
     }
-        if(frek.getBand(10)*4 > 30 && frek.getBand(10)*4 < 40 && timer == 0) {
-      fill(255,0,0);
-      ellipse(200,300,50,50);
-      timer = 30;
+        if(frek.getBand(10)*4 > 20 && frek.getBand(10)*4 < 35 && timer == 0) {
+      image(rgt, height/2, width/2);
+      timer = 15;
+    }
+          if(frek.getBand(10)*4 > 40 && frek.getBand(10)*4 < 50 && timer == 0) {
+      image(dwn, height/2, width/2);
+      timer = 15;
     }
         //will (hopefully) move arrow down screen (
     //arrow is ellipse right now,refering to my target_practice code
-    ex = random(0, width);
-    why = 0 - die / 2;  
-    whyspeed = random(50,70);
-    why = why + whyspeed;
+    //ex = random(0, width);
+    //why = 0 - die / 2;  
+    //whyspeed = random(50,70);
+    //why = why + whyspeed;
     
-    ellipse(ex, why, die, die);
-    if (why+ die/2 > height) {
-      setup();
-    }
+   // ellipse(ex, why, die, die);
+    //if (why+ die/2 > height) {
+     // setup();
+   // }
   }
   
   

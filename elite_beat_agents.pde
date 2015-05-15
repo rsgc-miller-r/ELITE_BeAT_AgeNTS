@@ -24,11 +24,19 @@ float skor = 0;
 float die = 0;
 //load title screen
 PImage img;
+PImage dwn;
+PImage up;
+PImage lft;
+PImage rgt;
 
 boolean run = false;
 void setup() {
   b = new Beat_Elite_Agents();
   size(400, 600);
+  dwn = loadImage("dwn.png");
+  up = loadImage("up.png");
+  lft = loadImage("lft.png");
+  rgt = loadImage("rgt.png");
   img = loadImage("beat.png");
   //ready object
   sund = new Minim(this);
