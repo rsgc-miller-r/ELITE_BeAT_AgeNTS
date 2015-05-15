@@ -4,6 +4,7 @@
 class Beat_Elite_Agents {
   
   void run() {
+
     
     if(timer > 0) {
      timer-=1; 
@@ -26,9 +27,30 @@ class Beat_Elite_Agents {
   }
     println(frek.getBand(10)*4);
     if(frek.getBand(10)*4 > 10 && frek.getBand(10)*4 < 20 && timer == 0) {
-      fill(random(255), random(255), random(255));
+      fill(0,0,255);
       ellipse(200,300,50,50);
       timer = 30;
+    }
+        if(frek.getBand(10)*4 > 50 && frek.getBand(10)*4 < 60 && timer == 0) {
+      fill(0,255,0);
+      ellipse(200,300,50,50);
+      timer = 30;
+    }
+        if(frek.getBand(10)*4 > 30 && frek.getBand(10)*4 < 40 && timer == 0) {
+      fill(255,0,0);
+      ellipse(200,300,50,50);
+      timer = 30;
+    }
+        //will (hopefully) move arrow down screen (
+    //arrow is ellipse right now,refering to my target_practice code
+    ex = random(0, width);
+    why = 0 - die / 2;  
+    whyspeed = random(50,70);
+    why = why + whyspeed;
+    
+    ellipse(ex, why, die, die);
+    if (why+ die/2 > height) {
+      setup();
     }
   }
   

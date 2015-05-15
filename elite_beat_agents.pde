@@ -21,6 +21,7 @@ float ex = 0; //horizontal position of arrow
 float why = 0; //vertical position of arrow
 float whyspeed = 50;
 float skor = 0;
+float die = 0;
 //load title screen
 PImage img;
 
