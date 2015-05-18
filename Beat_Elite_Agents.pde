@@ -9,11 +9,12 @@ class Beat_Elite_Agents {
     if(timer > 0) {
      timer-=1; 
     }
-    
+    //this
     println("R U BEAT ENUF?"); 
+    println("R U?!?1!?");
    
     background(255);
-    
+    //create simple visualizer for background (for now)
     stroke(random(255), random(255), random(255));
     frek.forward(sang.mix);
     sang.play();
@@ -27,7 +28,8 @@ class Beat_Elite_Agents {
     //right channel
     line(q,50+sang.right.get(q)*50,q+1, 50+ sang.right.get(q+1)*50);
   }
-    println(frek.getBand(10)*4);
+    println(frek.getBand(10)*4); //this, and the next three 'if' statements create the 
+    //arrows based on frequency
     if(frek.getBand(10)*4 > 0 && frek.getBand(10)*4 < 5 && timer == 0) {
       image(up, 137, 225);
       timer = 15;
@@ -47,7 +49,7 @@ class Beat_Elite_Agents {
      //will (hopefully) move arrow down screen (reffered from
      //my target-practice) (this code doen't seem to work right now, however)
     ex = random(0, width);
-    why = 0 - die / 2;  
+    why = 0;  
     whyspeed = random(50,70);
     why = why + whyspeed;
        if(frek.getBand(10)*4 > 10 && frek.getBand(10)*4 < 15 && timer == 0) {
