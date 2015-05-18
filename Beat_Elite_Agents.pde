@@ -44,17 +44,18 @@ class Beat_Elite_Agents {
       image(dwn, 137, 225);
       timer = 15;
     }
-        //will (hopefully) move arrow down screen (
-    //arrow is ellipse right now,refering to my target_practice code
-    //ex = random(0, width);
-    //why = 0 - die / 2;  
-    //whyspeed = random(50,70);
-    //why = why + whyspeed;
+     //will (hopefully) move arrow down screen (reffered from
+     //my target-practice) (this code doen't seem to work right now, however)
+    ex = random(0, width);
+    why = 0 - die / 2;  
+    whyspeed = random(50,70);
+    why = why + whyspeed;
+       if(frek.getBand(10)*4 > 10 && frek.getBand(10)*4 < 15 && timer == 0) {
+      image(lft, ex, why);
+     // timer = 15;
+    }
+
     
-   // ellipse(ex, why, die, die);
-    //if (why+ die/2 > height) {
-     // setup();
-   // }
   }
   
   
