@@ -9,9 +9,7 @@ class Beat_Elite_Agents {
     if (timer>0) {
       timer -=1;
     }
-    //this
-
-
+    
     background(255);
     //create simple visualizer for background (for now)
     stroke(random(255), random(255), random(255));
