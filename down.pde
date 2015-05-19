@@ -6,21 +6,15 @@ class down {
     float why1speed = 10;
     why1 = why1 + why1speed;
     image(dwn, exx, why1);
-    if (exx>-101) {
-      exx += 1;
-    }
-    if (exx == 200) {
-      exx = -102;
-    }
+    
+    
     if (downtimer>0) {
       downtimer -= 1;
     }
     if (frek.getBand(10)*4 > 0 && frek.getBand(10)*4 < 10 && downtimer == 0) {
       if (timer == 0) {
         timer = 100;
-        if (exx == -102) {
-          exx = -90;
-        }
+       
       }
     }
   }
