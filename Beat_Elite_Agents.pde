@@ -1,6 +1,6 @@
 //Game by Rob 'Gorrila Ribs' Miller
 //It be Denk
-int timer = 20;
+int timer = 0;
 class Beat_Elite_Agents {
 
   void run() {
@@ -28,6 +28,7 @@ class Beat_Elite_Agents {
     //println(frek.getBand(10)*4); //this, and the next three 'if' statements create the 
     //arrows based on frequency
     //they're classes now!
+    timer = 20;
     u.run();
     
     d.run();
