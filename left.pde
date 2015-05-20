@@ -11,6 +11,18 @@ class left {
     if (leftimer>0) {
       leftimer -= 1;
     }
+    
+    
+    if (keyPressed) {
+      if (keyCode == LEFT) {
+        if (why2 > height - arrow) {
+          skor = skor + 1;
+          why2 = -100;
+        }
+      }
+    }
+    
+    
     if (frek.getBand(10)*4 > 20 && frek.getBand(10)*4 < 30 && leftimer == 0) {
       leftimer = 60;
       if (why2 > 600) {

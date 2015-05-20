@@ -8,6 +8,15 @@ class right {
     float why3speed = 5;
     why3 = why3 + why3speed;
 
+if (keyPressed) {
+      if (keyCode == RIGHT) {
+        if (why3 > height - arrow) {
+          skor = skor + 1;
+          why3 = -100;
+        }
+      }
+    }
+
     if (rightimer>0) {
       rightimer -= 1;
     }

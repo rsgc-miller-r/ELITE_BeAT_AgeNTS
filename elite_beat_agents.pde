@@ -10,6 +10,7 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.*;
 import ddf.minim.ugens.*;
+int arrow = 120;
 
 //create class
 Beat_Elite_Agents b;

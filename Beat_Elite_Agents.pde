@@ -9,8 +9,10 @@ class Beat_Elite_Agents {
     if (timer>0) {
       timer -=1;
     }
-    
+    stroke(0);
+    fill(0);
     background(255);
+    text("Score: " + skor, width/2, height/2);
     //create simple visualizer for background (for now)
     stroke(random(255), random(255), random(255));
     frek.forward(sang.mix);
@@ -25,7 +27,9 @@ class Beat_Elite_Agents {
       //right channel
       line(q, 50+sang.right.get(q)*50, q+1, 50+ sang.right.get(q+1)*50);
     }
-    //println(frek.getBand(10)*4); //this, and the next three 'if' statements create the 
+    line(0, height-arrow, width, height-arrow);
+    line(0, height-arrow + 100, width, height-arrow + 100);
+    println(frek.getBand(10)*4); //frequency
     //arrows based on frequency
     //they're classes now!
     timer = 20;
@@ -37,5 +41,6 @@ class Beat_Elite_Agents {
     
     r.run();
 println(timer);    
+
   }
 }

@@ -8,6 +8,15 @@ class up {
     float why4speed = 5;
     why4 = why4 + why4speed;
 
+if (keyPressed) {
+      if (keyCode == UP) {
+        if (why4 > height - arrow) {
+          skor = skor + 1;
+          why4 = -100;
+        }
+      }
+    }
+
     if (uptimer>0) {
       uptimer -= 1;
     }
