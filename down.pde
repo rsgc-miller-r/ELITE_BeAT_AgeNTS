@@ -22,7 +22,7 @@ class down {
     }
 
     if (frek.getBand(10)*4 > 0 && frek.getBand(10)*4 < 10 && downtimer == 0) {
-      downtimer = 60;
+      downtimer = 40;
       if (why1 > 600) {
         why1 = 0;
       }

@@ -21,7 +21,7 @@ if (keyPressed) {
       uptimer -= 1;
     }
     if (frek.getBand(10)*4 > 30 && frek.getBand(10)*4 < 40 && uptimer == 0) {
-      uptimer = 60;
+      uptimer = 40;
       if (why4 > 600) {
         why4 = 0;
       }

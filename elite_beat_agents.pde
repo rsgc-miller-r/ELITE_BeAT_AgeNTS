@@ -1,6 +1,8 @@
 //prog by Rob 'Gorrila Ribs' Miller
 //its dunk
 
+//libraries are = minim (all of it)
+
 //load a bunch o' libraries
 import procontroll.*;
 import net.java.games.input.*;
@@ -51,7 +53,7 @@ void setup() {
   //ready object
   sund = new Minim(this);
   //loads song from data folder, sets buffer length
-  sang = sund.loadFile("wonderful.mp3", 512);
+  sang = sund.loadFile("crythunder.mp3", 512);
   //load mp3 metadata (even though I'm not using it right now)
   meta = sang.getMetaData();
   //load frequency

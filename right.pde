@@ -21,7 +21,7 @@ if (keyPressed) {
       rightimer -= 1;
     }
     if (frek.getBand(10)*4 > 10 && frek.getBand(10)*4 < 20 && rightimer == 0) {
-      rightimer = 60;
+      rightimer = 40;
       if (why3 > 600) {
         why3 = 0;
       }

@@ -11,7 +11,7 @@ class Beat_Elite_Agents {
     }
     stroke(0);
     fill(0);
-    background(255);
+    background(0);
     text("Score: " + skor, width/2, height/2);
     //create simple visualizer for background (for now)
     stroke(random(255), random(255), random(255));
@@ -32,7 +32,7 @@ class Beat_Elite_Agents {
     println(frek.getBand(10)*4); //frequency
     //arrows based on frequency
     //they're classes now!
-    timer = 20;
+    timer = 10;
     u.run();
     
     d.run();

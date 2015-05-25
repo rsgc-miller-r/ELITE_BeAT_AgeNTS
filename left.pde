@@ -24,7 +24,7 @@ class left {
     
     
     if (frek.getBand(10)*4 > 20 && frek.getBand(10)*4 < 30 && leftimer == 0) {
-      leftimer = 60;
+      leftimer = 40;
       if (why2 > 600) {
         why2 = 0;
       }
